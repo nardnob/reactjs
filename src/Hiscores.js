@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import Loading from './Loading.js';
+import Button from 'react-bootstrap/Button';
 import './Hiscores.css';
 
 export default function Hiscores() {
@@ -26,12 +27,12 @@ export default function Hiscores() {
                         onChange={e => setUsername(e.target.value)}
                         value={username}
                     />
-                    <button 
+                    <Button 
                         className="hiscores-submit"
                         onClick={handleSubmit}
                     >
                         Submit
-                    </button>
+                    </Button>
                 </div>
                 {hiscores && 
                 <div className="hiscores-skills">
