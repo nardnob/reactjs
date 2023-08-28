@@ -1,19 +1,23 @@
+import { useState } from 'react';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
+import ContactModal from './modals/ContactModal';
 
 export default function NavigationBar() {
+    const [showContactModal, setShowContactModal] = useState(false);
+
     return (
         <>
             <Navbar expand="lg" className="bg-body-tertiary">
                 <Container fluid>
-                    <Navbar.Brand href="#home">nardnob</Navbar.Brand>
+                    <Navbar.Brand href="#home">Brandon Dixson</Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="me-auto">
                             <Nav.Link href="#home">Home</Nav.Link>
-                            <Nav.Link href="#link">Link</Nav.Link>
+                            <Nav.Link onClick={() => setShowContactModal(true) }>Contact</Nav.Link>
                             <NavDropdown title="Dropdown" id="basic-nav-dropdown">
                             <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
                             <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
@@ -25,6 +29,10 @@ export default function NavigationBar() {
                     </Navbar.Collapse>
                 </Container>
             </Navbar>
+            <ContactModal
+                show={showContactModal}
+                onClose={() => setShowContactModal(false) } 
+            />
         </>
     );
 }
