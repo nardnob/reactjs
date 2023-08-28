@@ -17,9 +17,9 @@ export default function TimePast({ beginDate }) {
 
     if (secondsExisting) {
         return (
-            <span>{secondsExisting} seconds ago</span>
+            <span>{secondsExisting} second{secondsExisting === 1 ? "" : "s"} ago</span>
         );
     } else {
-        return <span></span>
+        return <span>0 seconds ago</span>
     }
 }
