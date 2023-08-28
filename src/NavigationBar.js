@@ -7,6 +7,14 @@ import ContactModal from './modals/ContactModal';
 
 export default function NavigationBar() {
     const [showContactModal, setShowContactModal] = useState(false);
+    const [contactModalIsSubmitted, setContactModalIsSubmitted] = useState(false);
+    const [contactModalIsValidated, setContactModalIsValidated] = useState(false);
+
+    function handleContactClick() {
+        setContactModalIsSubmitted(false);
+        setContactModalIsValidated(false);
+        setShowContactModal(true);
+    }
 
     return (
         <>
@@ -17,7 +25,7 @@ export default function NavigationBar() {
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="me-auto">
                             <Nav.Link href="#home">Home</Nav.Link>
-                            <Nav.Link onClick={() => setShowContactModal(true) }>Contact</Nav.Link>
+                            <Nav.Link onClick={handleContactClick}>Contact</Nav.Link>
                             <NavDropdown title="Dropdown" id="basic-nav-dropdown">
                             <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
                             <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
@@ -31,6 +39,10 @@ export default function NavigationBar() {
             </Navbar>
             <ContactModal
                 show={showContactModal}
+                isSubmitted={contactModalIsSubmitted}
+                setIsSubmitted={setContactModalIsSubmitted}
+                isValidated={contactModalIsValidated}
+                setIsValidated={setContactModalIsValidated}
                 onClose={() => setShowContactModal(false) } 
             />
         </>
