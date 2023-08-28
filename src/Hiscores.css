@@ -1,6 +1,9 @@
 .hiscores {
-    border: 1px solid red;
+    border: 1px solid black;
+    border-radius: 5px;
     width: 300px;
+    padding: 5px;
+    float:right;
 }
 
 .hiscores-title {
@@ -16,4 +19,9 @@
 
 .hiscores-submit {
     padding: 4px;
+}
+
+.hiscores-skills {
+    margin-top: 5px;
+    border: 1px solid gray;
 }
