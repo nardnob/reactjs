@@ -1,0 +1,14 @@
+.hiscores {
+    border: 1px solid red;
+    width: 300px;
+}
+
+.hiscores-title {
+    font-size: 20px;
+    font-family: Calibri;
+    margin-bottom: 5px;
+}
+
+.hiscores-input {
+    padding: 4px;
+}
