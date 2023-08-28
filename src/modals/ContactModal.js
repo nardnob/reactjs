@@ -9,6 +9,7 @@ import './ContactModal.css';
 export default function ContactModal({ show, onClose }) {
     const [isLoading, setIsLoading] = useState(false);
     const [showEmailToast, setShowEmailToast] = useState(false);
+    const [emailToastCreatedTime, setEmailToastCreatedTime] = useState(new Date());
 
     const handleClose = () => onClose();
 
@@ -17,6 +18,7 @@ export default function ContactModal({ show, onClose }) {
         setTimeout(() => {
             handleClose();
             setIsLoading(false);
+            setEmailToastCreatedTime(new Date());
             setShowEmailToast(true);
         }, 2500);
     }
@@ -62,6 +64,7 @@ export default function ContactModal({ show, onClose }) {
             </Modal>
             <EmailToast 
                 show={showEmailToast}
+                createdTime={emailToastCreatedTime}
                 onClose={() => setShowEmailToast(false) }
             >
                 Thanks for the message! I will respond as soon as possible.
