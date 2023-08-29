@@ -21,9 +21,11 @@ export default function About() {
                         <Education />
                     </Col>
                 </Row>
-                <div className="mt-4">
-                    <Skills />
-                </div>
+                <Row className="mt-4">
+                    <Col xs={12} sm={10} md={8}>
+                        <Skills />
+                    </Col>
+                </Row>
             </div>
         </>
     );
