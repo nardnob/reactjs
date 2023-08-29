@@ -1,5 +1,5 @@
 import NavigationBar from '../../NavigationBar';
-import Overview from '../../Overview';
+import Overview from './Overview';
 import Card from 'react-bootstrap/Card';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './Home.css';
