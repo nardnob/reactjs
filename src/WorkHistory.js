@@ -10,12 +10,17 @@ export default function WorkHistory() {
                     <Accordion.Item eventKey="0">
                         <Accordion.Header>ArcBest Technologies — From December 2020</Accordion.Header>
                         <Accordion.Body>
-                            As a contractor I’m leveraged to assist multiple departments as needed. I focus primarily on VueJS web
-                            development, C# services (WebAPI, WCF), WinForms applications, console applications (often
-                            generating and emailing reports), and even legacy development: VB .NET, Mainframe (COBOL and JCL),
-                            and classic ASP. I have completed countless projects successfully, including: migrations from Subversion
-                            to Azure DevOps, conversions from legacy languages to newer technologies, new features and
-                            maintenance in existing applications, and numerous new applications from the ground up
+                            <p>
+                                As a contractor I’m leveraged to assist multiple departments as needed. I focus primarily on VueJS web
+                                development, C# services (WebAPI, WCF), WinForms applications, console applications (often
+                                generating and emailing reports), and even legacy development: VB .NET, Mainframe (COBOL and JCL),
+                                and classic ASP. 
+                            </p>
+                            <p>
+                                I have completed countless projects successfully, including: migrations from Subversion
+                                to Azure DevOps, conversions from legacy languages to newer technologies, new features and
+                                maintenance in existing applications, and numerous new applications from the ground up.
+                            </p>
                         </Accordion.Body>
                     </Accordion.Item>
                     <Accordion.Item eventKey="1">
