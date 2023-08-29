@@ -1,5 +1,6 @@
-import NavigationBar from '../NavigationBar';
 import Education from '../Education';
+import NavigationBar from '../NavigationBar';
+import Skills from '../Skills';
 import WorkHistory from '../WorkHistory';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
@@ -16,9 +17,13 @@ export default function About() {
                         <WorkHistory />
                     </Col>
                     <Col xs={12} lg={6}>
+                        <div className="d-block d-lg-none mt-4"></div>
                         <Education />
                     </Col>
                 </Row>
+                <div className="mt-4">
+                    <Skills />
+                </div>
             </div>
         </>
     );
