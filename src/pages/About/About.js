@@ -1,5 +1,5 @@
 import Education from './Education';
-import NavigationBar from '../../NavigationBar';
+import NavigationBar from '../../common/NavigationBar';
 import Skills from './Skills';
 import WorkHistory from './WorkHistory';
 import Row from 'react-bootstrap/Row';

@@ -1,4 +1,4 @@
-import NavigationBar from '../../NavigationBar';
+import NavigationBar from '../../common/NavigationBar';
 import Overview from './Overview';
 import Card from 'react-bootstrap/Card';
 import 'bootstrap/dist/css/bootstrap.min.css';

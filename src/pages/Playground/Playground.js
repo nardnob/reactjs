@@ -1,5 +1,5 @@
-import NavigationBar from '../../NavigationBar';
-import Hiscores from '../../Hiscores';
+import NavigationBar from '../../common/NavigationBar';
+import Hiscores from './Hiscores';
 import TimePast from '../../utilities/TimePast';
 import { useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';

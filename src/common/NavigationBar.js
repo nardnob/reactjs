@@ -2,7 +2,7 @@ import { useState } from 'react';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import ContactModal from './modals/ContactModal';
+import ContactModal from '../modals/ContactModal';
 
 export default function NavigationBar() {
     const [showContactModal, setShowContactModal] = useState(false);

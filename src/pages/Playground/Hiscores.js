@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import Loading from './Loading.js';
+import Loading from '../../common/Loading.js';
 import Button from 'react-bootstrap/Button';
 import './Hiscores.css';
 
