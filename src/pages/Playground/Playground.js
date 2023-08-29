@@ -1,6 +1,6 @@
-import NavigationBar from '../NavigationBar';
-import Hiscores from '../Hiscores';
-import TimePast from '../utilities/TimePast';
+import NavigationBar from '../../NavigationBar';
+import Hiscores from '../../Hiscores';
+import TimePast from '../../utilities/TimePast';
 import { useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
