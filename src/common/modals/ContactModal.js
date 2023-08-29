@@ -1,7 +1,7 @@
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import Modal from 'react-bootstrap/Modal';
-import Loading from '../../common/Loading';
+import Loading from '../utilities/Loading';
 import EmailToast from '../toasts/EmailToast';
 import { useState } from 'react';
 import './ContactModal.css';
