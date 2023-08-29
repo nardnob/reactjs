@@ -1,0 +1,12 @@
+.overview-image-container {
+    width: 600px;
+    float: right;
+}
+
+.overview-header {
+    font-size: 34px;
+}
+
+.overview-text {
+    font-size: 20px;
+}

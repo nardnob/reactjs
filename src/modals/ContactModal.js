@@ -14,10 +14,11 @@ export default function ContactModal({ show, isSubmitted, setIsSubmitted, isVali
     const handleClose = () => onClose();
 
     const handleSubmit = (e) => {
+        e.preventDefault();
+        e.stopPropagation();
+
         const form = e.currentTarget;
         if (form.checkValidity() === false) {
-            e.preventDefault();
-            e.stopPropagation();
         } else {
             setIsLoading(true);
             setTimeout(() => {
@@ -74,10 +75,10 @@ export default function ContactModal({ show, isSubmitted, setIsSubmitted, isVali
                         }
                     </Modal.Body>
                     <Modal.Footer>
-                        <Button variant="secondary" onClick={handleClose}>
+                        <Button variant="secondary" onClick={handleClose} disabled={isLoading || isSubmitted}>
                             Close
                         </Button>
-                        <Button variant="primary" type="submit">
+                        <Button variant="primary" type="submit" disabled={isLoading || isSubmitted}>
                             Send
                         </Button>
                     </Modal.Footer>
