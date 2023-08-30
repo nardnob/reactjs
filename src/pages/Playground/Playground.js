@@ -10,10 +10,10 @@ export default function Playground() {
     return (
         <>
             <div className="app">
-                <Hiscores />
                 <h1>Playground</h1>
                 <div className="mb-3">You first landed on this page <TimePast beginDate={initialTime} />.</div>
                 <Three />
+                <Hiscores />
             </div>
         </>
     );
