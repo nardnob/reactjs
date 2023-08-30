@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import Loading from '../../common/utilities/Loading.js';
 import Button from 'react-bootstrap/Button';
+import Card from 'react-bootstrap/Card';
 import Form from 'react-bootstrap/Form';
 import InputGroup from 'react-bootstrap/InputGroup';
 import './Hiscores.css';
@@ -28,37 +29,45 @@ export default function Hiscores() {
     if (isLoading) {
         return (
             <div className="hiscores">
-                <div className="hiscores-title">Hiscores</div>
-                <Loading />
+                <Card>
+                    <Card.Body>
+                        <div className="hiscores-title">Hiscores</div>
+                        <Loading />
+                    </Card.Body>
+                </Card>
             </div>
         );
     } else {
         return (
             <div className="hiscores">
-                <div className="hiscores-title">Hiscores</div>
-                <InputGroup className="mb-3">
-                    <Form.Control
-                        placeholder="Username"
-                        aria-label="Username"
-                        className="hiscores-input"
-                        onChange={e => setUsername(e.target.value)}
-                        value={username}
-                    />
-                    <Button 
-                        variant="primary" 
-                        className="hiscores-submit"
-                        onClick={handleSubmit}>
-                        Lookup
-                    </Button>
-                </InputGroup>
-                {hiscores && 
-                <div className="hiscores-skills">
-                    <div>Hiscores for {hiscores.username}</div>
-                    <div>Attack: {hiscores.skills.attack}</div>
-                    <div>Strength: {hiscores.skills.strength}</div>
-                    <div>Defence: {hiscores.skills.defence}</div>
-                </div>
-                }
+                <Card>
+                    <Card.Body>
+                        <div className="hiscores-title">Hiscores</div>
+                        <InputGroup className="mb-3">
+                            <Form.Control
+                                placeholder="Username"
+                                aria-label="Username"
+                                className="hiscores-input"
+                                onChange={e => setUsername(e.target.value)}
+                                value={username}
+                            />
+                            <Button 
+                                variant="primary" 
+                                className="hiscores-submit"
+                                onClick={handleSubmit}>
+                                Lookup
+                            </Button>
+                        </InputGroup>
+                        {hiscores && 
+                        <div className="hiscores-skills">
+                            <div>Hiscores for {hiscores.username}</div>
+                            <div>Attack: {hiscores.skills.attack}</div>
+                            <div>Strength: {hiscores.skills.strength}</div>
+                            <div>Defence: {hiscores.skills.defence}</div>
+                        </div>
+                        }
+                    </Card.Body>
+                </Card>
             </div>
         );
     }

@@ -7,7 +7,7 @@ import Col from 'react-bootstrap/Col';
 export default function Overview() {
     return (
         <>
-            <Card className="app">
+            <Card>
                 <Card.Body>
                     <Row>
                         <Col xs={12} sm={6}>
@@ -23,7 +23,7 @@ export default function Overview() {
             </Card>
             <div className="mt-4"></div>
 
-            <Card className="app">
+            <Card>
                 <Card.Body>
                     <h2>Personal Projects</h2>
                     <Card style={{ width: '18rem' }} className="overview-project mt-2">
