@@ -1,0 +1,12 @@
+.navigation-bar {
+    min-height: 80px;
+}
+
+.navigation-bar .navbar-brand {
+    font-size: 30px;
+}
+
+.navigation-bar .nav-link {
+    font-size: 20px;
+    margin-top: 5px;
+}
