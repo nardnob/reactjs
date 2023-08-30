@@ -2,6 +2,7 @@ import Badge from 'react-bootstrap/Badge';
 import Card from 'react-bootstrap/Card';
 import Form from 'react-bootstrap/Form';
 import { useState } from 'react';
+import SkillBadges from './SkillBadges';
 import './Skills.css';
 
 const desktopDevelopment = [
@@ -100,34 +101,22 @@ export default function Skills() {
                     </Form>
 
                     <h2>Desktop Development</h2>
-                    {desktopDevelopmentFiltered.length === 0 && 
-                        <Badge bg="secondary" className="skill-badge">No skills match your search</Badge>
-                    }
-                    <div className="mb-4">
-                    {desktopDevelopmentFiltered.map(skill => 
-                        <Badge bg="primary" className="skill-badge" key={skill.id}>{skill.name}</Badge>
-                    )}
-                    </div>
+                    <SkillBadges
+                        skills={desktopDevelopmentFiltered}
+                        variant="primary"
+                    />
 
                     <h2>Web Development</h2>
-                    {webDevelopmentFiltered.length === 0 && 
-                        <Badge bg="secondary" className="skill-badge">No skills match your search</Badge>
-                    }
-                    <div className="mb-4">
-                    {webDevelopmentFiltered.map(skill => 
-                        <Badge bg="success" className="skill-badge" key={skill.id}>{skill.name}</Badge>
-                    )}
-                    </div>
+                    <SkillBadges
+                        skills={webDevelopmentFiltered}
+                        variant="success"
+                    />
 
                     <h2>Developer Tools</h2>
-                    {developerToolsFiltered.length === 0 && 
-                        <Badge bg="secondary" className="skill-badge">No skills match your search</Badge>
-                    }
-                    <div>
-                    {developerToolsFiltered.map(skill => 
-                        <Badge bg="danger" className="skill-badge" key={skill.id}>{skill.name}</Badge>
-                    )}
-                    </div>
+                    <SkillBadges
+                        skills={developerToolsFiltered}
+                        variant="danger"
+                    />
                 </Card.Body>
             </Card>
         </>
