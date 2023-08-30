@@ -58,6 +58,17 @@ export default function Overview() {
                             <Card.Link target="_blank" rel="noopener noreferrer" href="https://github.com/nardnob/rslookup_chrome">Github Repo</Card.Link>
                         </Card.Body>
                     </Card>
+
+                    <Card style={{ width: '18rem' }} className="overview-project mt-2">
+                        <Card.Img variant="top" src="images/react_website.png" />
+                        <Card.Body>
+                            <Card.Title>React Website</Card.Title>
+                            <Card.Text>
+                                Personal website made in React. View the code for this website on Github.
+                            </Card.Text>
+                            <Card.Link target="_blank" rel="noopener noreferrer" href="https://github.com/nardnob/reactjs">Github Repo</Card.Link>
+                        </Card.Body>
+                    </Card>
                 </Card.Body>
             </Card>
         </>
