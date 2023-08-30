@@ -1,4 +1,3 @@
-import NavigationBar from '../../common/NavigationBar';
 import Hiscores from './Hiscores';
 import TimePast from '../../common/utilities/TimePast';
 import { useState } from 'react';
@@ -9,7 +8,6 @@ export default function Playground() {
 
     return (
         <>
-            <NavigationBar />
             <div className="app">
                 <Hiscores />
                 <h1>Playground</h1>

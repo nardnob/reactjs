@@ -1,5 +1,4 @@
 import Education from './Education';
-import NavigationBar from '../../common/NavigationBar';
 import Skills from './Skills';
 import WorkHistory from './WorkHistory';
 import Row from 'react-bootstrap/Row';
@@ -10,7 +9,6 @@ import './About.css';
 export default function About() {
     return (
         <>
-            <NavigationBar />
             <div className="app">
                 <Row>
                     <Col xs={12} sm={10} md={8} lg={6}>
