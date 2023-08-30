@@ -99,19 +99,19 @@ export default function Skills() {
                         </Form.Group>
                     </Form>
 
-                    <h2>Desktop Development</h2>
+                    <h2 className="skills-header">Desktop Development</h2>
                     <SkillBadges
                         skills={desktopDevelopmentFiltered}
                         variant="primary"
                     />
 
-                    <h2>Web Development</h2>
+                    <h2 className="skills-header">Web Development</h2>
                     <SkillBadges
                         skills={webDevelopmentFiltered}
                         variant="success"
                     />
 
-                    <h2>Developer Tools</h2>
+                    <h2 className="skills-header">Developer Tools</h2>
                     <SkillBadges
                         skills={developerToolsFiltered}
                         variant="danger"

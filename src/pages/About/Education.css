@@ -1,3 +1,9 @@
 .education .card-title {
     font-weight: bold;
 }
+
+.education-header {    
+    font-size: 34px;
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: bold;
+}

@@ -2,3 +2,8 @@
     --bs-badge-font-size: 17px;
     margin: 5px;
 }
+
+.skills-header {    
+    font-size: 34px;
+    font-family: 'Rajdhani', sans-serif;
+}
