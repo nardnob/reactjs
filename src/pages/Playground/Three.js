@@ -45,7 +45,10 @@ export default function Three() {
                         <Box position={[2, 1, 0]} boxWidth={3} boxHeight={1} />
                         <Box position={[2, 0, 0]} boxWidth={1} boxHeight={1} />
                         <Box position={[2, -1, 0]} boxWidth={3} boxHeight={1} />
-                        <OrbitControls />
+                        <OrbitControls
+                            autoRotate={true}
+                            autoRotateSpeed={5}
+                        />
                     </Canvas>
                 </div>
                 <Card.Title>Three.js in React</Card.Title>
