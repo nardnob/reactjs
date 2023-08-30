@@ -8,10 +8,12 @@ export default function NavigationBar() {
     const [showContactModal, setShowContactModal] = useState(false);
     const [contactModalIsSubmitted, setContactModalIsSubmitted] = useState(false);
     const [contactModalIsValidated, setContactModalIsValidated] = useState(false);
+    const [contactModalFailedToSend, setContactModalFailedToSend] = useState(false);
 
     function handleContactClick() {
         setContactModalIsSubmitted(false);
         setContactModalIsValidated(false);
+        setContactModalFailedToSend(false);
         setShowContactModal(true);
     }
 
@@ -37,6 +39,8 @@ export default function NavigationBar() {
                 setIsSubmitted={setContactModalIsSubmitted}
                 isValidated={contactModalIsValidated}
                 setIsValidated={setContactModalIsValidated}
+                failedToSend={contactModalFailedToSend}
+                setFailedToSend={setContactModalFailedToSend}
                 onClose={() => setShowContactModal(false) } 
             />
         </>
