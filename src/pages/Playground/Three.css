@@ -1,0 +1,28 @@
+.three-card {
+    display: inline-block;
+}
+
+.three-card .card-body {
+    padding: 0;
+}
+
+.three-canvas-container {
+    width: 600px;
+    height: 300px;
+}
+
+.three-canvas {
+    background-color: white;
+    border-radius: 5px 5px 0 0;
+}
+
+.three-card .card-title {
+    margin: 10px;
+    max-width: 575px;
+}
+
+.three-card .card-text {
+    margin: 10px;
+    max-width: 575px;
+    font-size: 14px;
+}

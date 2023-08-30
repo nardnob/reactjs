@@ -1,4 +1,5 @@
 import Hiscores from './Hiscores';
+import Three from './Three';
 import TimePast from '../../common/utilities/TimePast';
 import { useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -11,7 +12,8 @@ export default function Playground() {
             <div className="app">
                 <Hiscores />
                 <h1>Playground</h1>
-                <div>You first landed on this page <TimePast beginDate={initialTime} />.</div>
+                <div className="mb-3">You first landed on this page <TimePast beginDate={initialTime} />.</div>
+                <Three />
             </div>
         </>
     );
