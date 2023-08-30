@@ -26,6 +26,7 @@ export default function ContactModal({ show, isSubmitted, setIsSubmitted, isVali
             setIsSubmitted(true);
             setEmailToastCreatedTime(new Date());
             setShowEmailToast(true);
+            setFormData({ emailAddress: '', message: '' });
         })
         .catch(error => {
             setIsLoading(false);
