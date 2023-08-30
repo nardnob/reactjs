@@ -13,8 +13,15 @@ export default function Overview() {
                     <Row>
                         <Col xs={12} sm={6}>
                             <p className="overview-header">I’m a full-stack software developer in Fort Smith, AR</p>
-                            <p className="overview-text">I specialize in .NET desktop and web development, but have experience with many technologies. I currently work as a contractor for a trucking company, ArcBest Technologies, where I've completed countless projects successfully, including numerous new applications from the ground up.</p>
-                            <p className="overview-text">I am on the job market for a fully-remote position. Please review my website and contact me to discuss more.</p>
+                            <p className="overview-text">
+                                I specialize in .NET desktop and web development, but have experience with many 
+                                technologies. I currently work as a contractor for a trucking company, ArcBest Technologies, 
+                                where I've completed countless projects successfully, including numerous new applications from the ground up.
+                            </p>
+                            <p className="overview-text">
+                                I am on the job market for a fully-remote position. 
+                                Please review my website and contact me to discuss more.
+                            </p>
                         </Col>
                         <Col xs={12} sm={6}>
                             <Image src="images/code_on_screen.jpg" rounded fluid />
@@ -22,11 +29,12 @@ export default function Overview() {
                     </Row>
                 </Card.Body>
             </Card>
+
             <div className="mt-4"></div>
 
             <Card>
                 <Card.Body>
-                    <h2>Personal Projects</h2>
+                    <h2 class="overview-header">Personal Projects</h2>
                     <Project 
                         title="Kryptonite Mod"
                         text="My personal minecraft mod. Development was in Java and Forge."
