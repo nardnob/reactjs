@@ -18,8 +18,10 @@ export default function Overview() {
                 </Col>
             </Row>
 
+            <div className="mt-4"></div>
+
             <h2>Personal Projects</h2>
-            <Card style={{ width: '18rem' }} className="overview-project">
+            <Card style={{ width: '18rem' }} className="overview-project mt-2">
                 <Card.Img variant="top" src="images/kryptonite.png" />
                 <Card.Body>
                     <Card.Title>Kryptonite Mod</Card.Title>
@@ -30,7 +32,7 @@ export default function Overview() {
                 </Card.Body>
             </Card>
             
-            <Card style={{ width: '18rem' }} className="overview-project">
+            <Card style={{ width: '18rem' }} className="overview-project mt-2">
                 <Card.Img variant="top" src="images/LineCharges.png" />
                 <Card.Body>
                     <Card.Title>Line Charges</Card.Title>
@@ -41,7 +43,7 @@ export default function Overview() {
                 </Card.Body>
             </Card>
             
-            <Card style={{ width: '18rem' }} className="overview-project">
+            <Card style={{ width: '18rem' }} className="overview-project mt-2">
                 <Card.Img variant="top" src="images/rslookup.png" />
                 <Card.Body>
                     <Card.Title>RS Lookup</Card.Title>
