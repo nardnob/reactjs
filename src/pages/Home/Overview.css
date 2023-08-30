@@ -5,6 +5,7 @@
 
 .overview-header {
     font-size: 34px;
+    font-family: 'Rajdhani', sans-serif;
 }
 
 .overview-text {
@@ -14,4 +15,8 @@
 .overview-project {
     float: left;
     margin-right: 15px;
+}
+
+.overview-project .card-text {
+    font-size: 14px;
 }

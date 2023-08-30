@@ -1,4 +1,5 @@
 import Card from 'react-bootstrap/Card';
+import './Education.css';
 
 export default function Education() {
     return (

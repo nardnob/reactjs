@@ -1,6 +1,4 @@
 .hiscores {
-    border: 1px solid black;
-    border-radius: 5px;
     width: 300px;
     padding: 5px;
     float:right;
@@ -19,5 +17,6 @@
 
 .hiscores-skills {
     margin-top: 5px;
+    padding: 5px;
     border: 1px solid gray;
 }
