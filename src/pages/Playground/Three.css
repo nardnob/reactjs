@@ -7,7 +7,7 @@
 }
 
 .three-canvas-container {
-    width: 600px;
+    width: 345px;
     height: 300px;
 }
 
@@ -18,11 +18,11 @@
 
 .three-card .card-title {
     margin: 10px;
-    max-width: 575px;
+    max-width: 325px;
 }
 
 .three-card .card-text {
     margin: 10px;
-    max-width: 575px;
+    max-width: 325px;
     font-size: 14px;
 }
