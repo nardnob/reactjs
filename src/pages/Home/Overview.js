@@ -3,6 +3,7 @@ import Card from 'react-bootstrap/Card';
 import Image from 'react-bootstrap/Image';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import Project from './Project';
 
 export default function Overview() {
     return (
@@ -26,49 +27,33 @@ export default function Overview() {
             <Card>
                 <Card.Body>
                     <h2>Personal Projects</h2>
-                    <Card style={{ width: '18rem' }} className="overview-project mt-2">
-                        <Card.Img variant="top" src="images/kryptonite.png" />
-                        <Card.Body>
-                            <Card.Title>Kryptonite Mod</Card.Title>
-                            <Card.Text>
-                                My personal minecraft mod. Development was in Java and Forge.
-                            </Card.Text>
-                            <Card.Link target="_blank" rel="noopener noreferrer" href="https://github.com/nardnob/KryptoniteMod">Github Repo</Card.Link>
-                        </Card.Body>
-                    </Card>
+                    <Project 
+                        title="Kryptonite Mod"
+                        text="My personal minecraft mod. Development was in Java and Forge."
+                        imageSrc="images/kryptonite.png"
+                        link="https://github.com/nardnob/KryptoniteMod"
+                    />
 
-                    <Card style={{ width: '18rem' }} className="overview-project mt-2">
-                        <Card.Img variant="top" src="images/LineCharges.png" />
-                        <Card.Body>
-                            <Card.Title>Line Charges</Card.Title>
-                            <Card.Text>
-                                ASP.NET MVC Practice, required for a job interview.
-                            </Card.Text>
-                            <Card.Link target="_blank" rel="noopener noreferrer" href="https://github.com/nardnob/LineCharges">Github Repo</Card.Link>
-                        </Card.Body>
-                    </Card>
+                    <Project 
+                        title="Line Charges"
+                        text="ASP.NET MVC Practice, required for a job interview."
+                        imageSrc="images/LineCharges.png"
+                        link="https://github.com/nardnob/LineCharges"
+                    />
 
-                    <Card style={{ width: '18rem' }} className="overview-project mt-2">
-                        <Card.Img variant="top" src="images/rslookup.png" />
-                        <Card.Body>
-                            <Card.Title>RS Lookup</Card.Title>
-                            <Card.Text>
-                                Chrome extension that integrates with a third-party hiscores API.
-                            </Card.Text>
-                            <Card.Link target="_blank" rel="noopener noreferrer" href="https://github.com/nardnob/rslookup_chrome">Github Repo</Card.Link>
-                        </Card.Body>
-                    </Card>
+                    <Project 
+                        title="RS Lookup"
+                        text="Chrome extension that integrates with a third-party hiscores API."
+                        imageSrc="images/rslookup.png"
+                        link="https://github.com/nardnob/rslookup_chrome"
+                    />
 
-                    <Card style={{ width: '18rem' }} className="overview-project mt-2">
-                        <Card.Img variant="top" src="images/react_website.png" />
-                        <Card.Body>
-                            <Card.Title>React Website</Card.Title>
-                            <Card.Text>
-                                Personal website made in React. View the code for this website on Github.
-                            </Card.Text>
-                            <Card.Link target="_blank" rel="noopener noreferrer" href="https://github.com/nardnob/reactjs">Github Repo</Card.Link>
-                        </Card.Body>
-                    </Card>
+                    <Project 
+                        title="React Website"
+                        text="Personal website made in React. View the code for this website on Github."
+                        imageSrc="images/react_website.png"
+                        link="https://github.com/nardnob/reactjs"
+                    />
                 </Card.Body>
             </Card>
         </>
