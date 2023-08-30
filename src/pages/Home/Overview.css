@@ -16,3 +16,7 @@
     float: left;
     margin-right: 15px;
 }
+
+.overview-project .card-text {
+    font-size: 14px;
+}
