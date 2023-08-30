@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import Spinner from 'react-bootstrap/Spinner';
 import './Loading.css';
 
 export default function Loading() {
@@ -17,7 +18,9 @@ export default function Loading() {
     }, [numDots]);
 
     return (
-        <div>Loading{getDots()}</div>
+        <div>
+            <Spinner animation="border" size="sm" role="status" /> Loading{getDots()}
+        </div>
     );
 
     function getDots() {
