@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import Container from 'react-bootstrap/Container';
+import Image from 'react-bootstrap/Image';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import ContactModal from '../common/modals/ContactModal';
@@ -22,7 +23,9 @@ export default function NavigationBar() {
         <>
             <Navbar expand="lg" className="bg-body-tertiary navigation-bar">
                 <Container fluid>
-                    <Navbar.Brand href="home" className="navigation-bar-title">Brandon Dixson</Navbar.Brand>
+                    <Navbar.Brand href="home" className="navigation-bar-title">
+                        Brandon Dixson
+                    </Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="me-auto">
