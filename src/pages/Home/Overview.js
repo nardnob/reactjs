@@ -11,7 +11,7 @@ export default function Overview() {
             <Card>
                 <Card.Body>
                     <Row>
-                        <Col xs={12} sm={6}>
+                        <Col xs={12} md={6}>
                             <p className="overview-header">I’m a full-stack software developer in Fort Smith, AR</p>
                             <p className="overview-text">
                                 I specialize in .NET desktop and web development, but have experience with many 
@@ -22,9 +22,14 @@ export default function Overview() {
                                 I am on the job market for a fully-remote position. 
                                 Please review my website and contact me to discuss more.
                             </p>
+                            <div className="headshot-container">
+                                <Image src="images/headshot.png" roundedCircle />
+                            </div>
                         </Col>
-                        <Col xs={12} sm={6}>
-                            <Image src="images/code_on_screen.jpg" rounded fluid />
+                        <Col xs={12} md={6}>
+                            <div className="d-none d-md-block">
+                                <Image src="images/code_on_screen.jpg" rounded fluid />
+                            </div>
                         </Col>
                     </Row>
                 </Card.Body>
