@@ -5,12 +5,15 @@
 
 .overview-header {
     font-size: 34px;
-    font-family: 'Rajdhani', sans-serif;
-    margin-bottom: 0;
+    font-family: 'Rajdhani', sans-serif;    
 }
 
-.overview-text {
+.overview-text-1, .overview-text-2 {
     font-size: 20px;
+}
+
+.overview-text-2 {
+    margin-top: 20px;
 }
 
 .headshot-container {
