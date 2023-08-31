@@ -19,7 +19,7 @@
     margin-left: 10px;
 }
 
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 530px) {
     .work-history-accordion-header .accordion-header-company {
         min-width: 262px;
     }
