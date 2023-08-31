@@ -4,7 +4,7 @@ import './Project.css';
 
 export default function Project({ title, text, imageSrc, link }) {
     return (
-        <Card style={{ width: '18rem' }} className="project mt-2">
+        <Card className="project">
             <Card.Img variant="top" src={imageSrc} />
             <Card.Body>
                 <Card.Title>{title}</Card.Title>

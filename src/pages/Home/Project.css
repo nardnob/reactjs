@@ -1,6 +1,6 @@
 .project {
-    float: left;
     margin-right: 15px;
+    margin-top: 20px;
 }
 
 .project .card-title {
@@ -18,7 +18,7 @@
 }
 
 .project-text-container {
-    min-height: 65px;
+    min-height: 80px;
     font-size: 14px;
 }
 
