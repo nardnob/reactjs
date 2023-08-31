@@ -52,7 +52,7 @@ export default function ContactModal({ show, isSubmitted, setIsSubmitted, isVali
     return (
         <>
             <Modal show={show} onHide={handleClose}>
-                <Form noValidate validated={isValidated} onSubmit={handleSubmit}>
+                <Form noValidate validated={isValidated} onSubmit={handleSubmit} className="contact-form">
                     <Modal.Header closeButton>
                         <Modal.Title>Contact Me</Modal.Title>
                     </Modal.Header>
