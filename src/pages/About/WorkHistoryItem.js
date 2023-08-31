@@ -1,4 +1,5 @@
 import Accordion from 'react-bootstrap/Accordion';
+import './WorkHistoryItem.css';
 
 export default function WorkHistoryItem({ company, fromDate, toDate, eventKey, children }) {
     const toDateText = !toDate ? '' : `To ${toDate}`;

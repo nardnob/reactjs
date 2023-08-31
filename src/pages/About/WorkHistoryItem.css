@@ -1,0 +1,44 @@
+.work-history-accordion-header .accordion-button {
+    font-size: 20px;
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: bold;
+}
+
+.work-history-accordion-header .accordion-button:not(.collapsed) {
+    background-color: #143465;
+}
+
+.work-history-accordion-header .accordion-header-company {
+    font-size: 20px;
+    color: #dee2e6;
+}
+
+.work-history-accordion-header .accordion-header-date {
+    font-size: 16px;
+    margin-left: 10px;
+    color: #dee2e6;
+}
+
+@media screen and (min-width: 530px) {
+    .work-history-accordion-header .accordion-header-company {
+        min-width: 262px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .work-history-accordion-header .accordion-header-company {
+        min-width: 300px;
+    }
+}
+
+@media screen and (max-width: 499px) {
+    .work-history-accordion-header .accordion-header-company {
+        min-width: 190px;
+    }
+}
+
+@media screen and (max-width: 399px) {
+    .work-history-accordion-header .accordion-header-company {
+        min-width: 150px;
+    }
+}
