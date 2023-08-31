@@ -25,9 +25,11 @@ export default function Overview() {
                     </Card>
                 </Col>
                 <Col xs={12} md={6} lg={4}>
+                    <div className="overview-spacer d-block d-md-none"></div>
                     <div className="headshot-container">
                         <Image src="images/headshot.png" roundedCircle />
                     </div>
+                    <div className="overview-spacer d-block d-md-none"></div>
                 </Col>
             </Row>
         </>
