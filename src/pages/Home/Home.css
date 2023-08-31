@@ -6,3 +6,9 @@
 .clearfix {
     clear: both;
 }
+
+.projects-header {
+    font-size: 34px;
+    font-family: 'Rajdhani', sans-serif;
+    margin-bottom: 0;
+}

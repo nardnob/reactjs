@@ -16,7 +16,7 @@ export default function Home() {
 
                 <Card className="projects">
                     <Card.Body>
-                        <h2 class="overview-header">Personal Projects</h2>
+                        <h2 class="projects-header">Personal Projects</h2>
 
                         <Row>
                             <Col xs={12} sm={6} md={4} lg={3}>
