@@ -94,6 +94,7 @@ export default function Skills() {
                             <Form.Control 
                                 type="text" 
                                 placeholder="Search skills"
+                                className="search-skills"
                                 onChange={e => setSearchText(e.target.value)} 
                             />
                         </Form.Group>
