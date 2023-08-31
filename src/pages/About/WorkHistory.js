@@ -6,7 +6,7 @@ export default function WorkHistory() {
     return (
         <>
             <div className="work-history">
-                <h2 class="work-history-header">Work History</h2>
+                <h2 className="work-history-header">Work History</h2>
                 <Accordion defaultActiveKey="0" className="mt-3">
                     <WorkHistoryItem 
                         company="ArcBest Technologies"
