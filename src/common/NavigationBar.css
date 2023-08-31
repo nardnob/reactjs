@@ -11,3 +11,8 @@
     font-size: 26px;
     font-family: 'Rajdhani', sans-serif;
 }
+
+.navigation-bar .navbar-toggler {
+    border: none;
+    box-shadow: none;
+}
