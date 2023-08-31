@@ -8,7 +8,7 @@ export default function Home() {
         <>
             <div className="app">
                 <Overview />
-                <div className="mt-4"></div>
+                <div className="home-spacer d-none d-md-block"></div>
                 <Projects />
             </div>
         </>

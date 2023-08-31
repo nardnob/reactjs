@@ -6,3 +6,7 @@
 .clearfix {
     clear: both;
 }
+
+.home-spacer {
+    margin-top: 110px;
+}
