@@ -11,12 +11,3 @@
 .overview-text {
     font-size: 20px;
 }
-
-.overview-project {
-    float: left;
-    margin-right: 15px;
-}
-
-.overview-project .card-text {
-    font-size: 14px;
-}

@@ -1,0 +1,27 @@
+.project {
+    float: left;
+    margin-right: 15px;
+}
+
+.project .card-title {
+    margin-top: 15px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.project .card-text {
+    font-size: 14px;
+}
+
+.project .card-body {
+    padding: 0;
+}
+
+.project-text-container {
+    min-height: 65px;
+    font-size: 14px;
+}
+
+.project-link-container {
+    border-radius: 25px !important;
+}
