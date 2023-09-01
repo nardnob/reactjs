@@ -9,9 +9,9 @@ import './Hiscores.css';
 
 export default function Hiscores() {
     const [isLoading, setIsLoading] = useState(false);
-    const [username, setUsername] = useState('');
+    const [username, setUsername] = useState('Clive');
     const [hiscores, setHiscores] = useState(null);
-    const [lookupDisabled, setLookupDisabled] = useState(true);
+    const [lookupDisabled, setLookupDisabled] = useState(false);
     const usernameRef = useRef(null);
 
     function handleUsernameChange(e) {

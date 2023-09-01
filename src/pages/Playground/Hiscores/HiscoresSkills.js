@@ -6,7 +6,7 @@ import './HiscoresSkills.css';
 export default function HiscoresSkills({ hiscores }) {
     return (
         <div className="hiscores-skills">
-            <Row>
+            <Row className="skill-row">
                 <Col xs={4}>
                     <HiscoresSkill
                         imageSrc="images/Hiscores/attack.png"
@@ -26,7 +26,7 @@ export default function HiscoresSkills({ hiscores }) {
                     />     
                 </Col>
             </Row>
-            <Row>
+            <Row className="skill-row">
                 <Col xs={4}>
                     <HiscoresSkill
                         imageSrc="images/Hiscores/strength.png"
@@ -46,7 +46,7 @@ export default function HiscoresSkills({ hiscores }) {
                     />     
                 </Col>
             </Row>
-            <Row>
+            <Row className="skill-row">
                 <Col xs={4}>
                     <HiscoresSkill
                         imageSrc="images/Hiscores/defence.png"
@@ -66,7 +66,7 @@ export default function HiscoresSkills({ hiscores }) {
                     />     
                 </Col>
             </Row>
-            <Row>
+            <Row className="skill-row">
                 <Col xs={4}>
                     <HiscoresSkill
                         imageSrc="images/Hiscores/ranged.png"
@@ -86,7 +86,7 @@ export default function HiscoresSkills({ hiscores }) {
                     />     
                 </Col>
             </Row>
-            <Row>
+            <Row className="skill-row">
                 <Col xs={4}>
                     <HiscoresSkill
                         imageSrc="images/Hiscores/prayer.png"
@@ -106,7 +106,7 @@ export default function HiscoresSkills({ hiscores }) {
                     />     
                 </Col>
             </Row>
-            <Row>
+            <Row className="skill-row">
                 <Col xs={4}>
                     <HiscoresSkill
                         imageSrc="images/Hiscores/magic.png"
@@ -126,7 +126,7 @@ export default function HiscoresSkills({ hiscores }) {
                     />     
                 </Col>
             </Row>
-            <Row>
+            <Row className="skill-row">
                 <Col xs={4}>
                     <HiscoresSkill
                         imageSrc="images/Hiscores/runecrafting.png"
@@ -146,7 +146,7 @@ export default function HiscoresSkills({ hiscores }) {
                     />     
                 </Col>
             </Row>
-            <Row>
+            <Row className="skill-row">
                 <Col xs={4}>
                     <HiscoresSkill
                         imageSrc="images/Hiscores/construction.png"
@@ -166,7 +166,7 @@ export default function HiscoresSkills({ hiscores }) {
                     />     
                 </Col>
             </Row>
-            <Row>
+            <Row className="skill-row">
                 <Col xs={4}>
                     <HiscoresSkill
                         imageSrc="images/Hiscores/dungeoneering.png"
