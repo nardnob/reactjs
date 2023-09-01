@@ -25,7 +25,7 @@ export default function Skills() {
     return (
         <>
             <Card className="mt-3">
-                <Card.Body>
+                <Card.Body className="skills-card-body">
                     <Form className="mb-3" onSubmit={(e) => {
                         e.preventDefault();
                         e.stopPropagation();
