@@ -10,6 +10,18 @@ export default function Hiscores() {
     const [isLoading, setIsLoading] = useState(false);
     const [username, setUsername] = useState('');
     const [hiscores, setHiscores] = useState(null);
+    const [lookupDisabled, setLookupDisabled] = useState(true);
+
+    function handleUsernameChange(e) {
+        setUsername(e.target.value);
+        setLookupDisabled(!e.target.value);
+    }
+
+    function handleUsernameOnKeyDown(e) {
+        if (e.keyCode === 13) { //handle enter key
+            handleSubmit();
+        } 
+    }
 
     function handleSubmit() {
         setIsLoading(true);
@@ -48,13 +60,16 @@ export default function Hiscores() {
                                 placeholder="Username"
                                 aria-label="Username"
                                 className="hiscores-input"
-                                onChange={e => setUsername(e.target.value)}
+                                onChange={handleUsernameChange}
+                                onKeyDown={handleUsernameOnKeyDown}
                                 value={username}
                             />
                             <Button 
                                 variant="primary" 
                                 className="hiscores-submit"
-                                onClick={handleSubmit}>
+                                onClick={handleSubmit}
+                                disabled={lookupDisabled}
+                            >
                                 Lookup
                             </Button>
                         </InputGroup>
