@@ -1,5 +1,6 @@
 .project {
     margin-top: 20px;
+    max-width: 300px;
 }
 
 .project .card-title {
