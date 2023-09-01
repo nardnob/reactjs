@@ -20,7 +20,7 @@ export default function Hiscores() {
     function handleUsernameOnKeyDown(e) {
         if (e.keyCode === 13) { //handle enter key
             handleSubmit();
-        } 
+        }
     }
 
     function handleSubmit() {
@@ -38,23 +38,15 @@ export default function Hiscores() {
         }, 3000);
     }
 
-    if (isLoading) {
-        return (
-            <div className="hiscores">
-                <Card>
-                    <Card.Body>
-                        <div className="hiscores-title">Hiscores</div>
+    return (
+        <div className="hiscores">
+            <Card>
+                <Card.Body>
+                    <div className="hiscores-title">Hiscores</div>
+                    {isLoading && (
                         <Loading />
-                    </Card.Body>
-                </Card>
-            </div>
-        );
-    } else {
-        return (
-            <div className="hiscores">
-                <Card>
-                    <Card.Body>
-                        <div className="hiscores-title">Hiscores</div>
+                    )}
+                    {!isLoading && (
                         <InputGroup className="mb-3">
                             <Form.Control
                                 placeholder="Username"
@@ -64,8 +56,8 @@ export default function Hiscores() {
                                 onKeyDown={handleUsernameOnKeyDown}
                                 value={username}
                             />
-                            <Button 
-                                variant="primary" 
+                            <Button
+                                variant="primary"
                                 className="hiscores-submit"
                                 onClick={handleSubmit}
                                 disabled={lookupDisabled}
@@ -73,17 +65,17 @@ export default function Hiscores() {
                                 Lookup
                             </Button>
                         </InputGroup>
-                        {hiscores && 
+                    )}
+                    {(!isLoading && hiscores) &&
                         <div className="hiscores-skills">
                             <div>Hiscores for {hiscores.username}</div>
                             <div>Attack: {hiscores.skills.attack}</div>
                             <div>Strength: {hiscores.skills.strength}</div>
                             <div>Defence: {hiscores.skills.defence}</div>
                         </div>
-                        }
-                    </Card.Body>
-                </Card>
-            </div>
-        );
-    }
+                    }
+                </Card.Body>
+            </Card>
+        </div>
+    );
 }
