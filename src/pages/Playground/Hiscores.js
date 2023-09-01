@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useRef } from 'react';
 import Loading from '../../common/utilities/Loading.js';
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
@@ -11,6 +11,7 @@ export default function Hiscores() {
     const [username, setUsername] = useState('');
     const [hiscores, setHiscores] = useState(null);
     const [lookupDisabled, setLookupDisabled] = useState(true);
+    const usernameRef = useRef(null);
 
     function handleUsernameChange(e) {
         setUsername(e.target.value);
@@ -35,6 +36,9 @@ export default function Hiscores() {
                 }
             })
             setIsLoading(false);
+            setTimeout(() => {
+                usernameRef.current.focus();
+            }, 0);
         }, 3000);
     }
 
@@ -46,26 +50,26 @@ export default function Hiscores() {
                     {isLoading && (
                         <Loading />
                     )}
-                    {!isLoading && (
-                        <InputGroup className="mb-3">
-                            <Form.Control
-                                placeholder="Username"
-                                aria-label="Username"
-                                className="hiscores-input"
-                                onChange={handleUsernameChange}
-                                onKeyDown={handleUsernameOnKeyDown}
-                                value={username}
-                            />
-                            <Button
-                                variant="primary"
-                                className="hiscores-submit"
-                                onClick={handleSubmit}
-                                disabled={lookupDisabled}
-                            >
-                                Lookup
-                            </Button>
-                        </InputGroup>
-                    )}
+                    <InputGroup className={"mb-3" + (isLoading ? " d-none" : "")}>
+                        <Form.Control
+                            placeholder="Username"
+                            aria-label="Username"
+                            className="hiscores-input"
+                            onChange={handleUsernameChange}
+                            onKeyDown={handleUsernameOnKeyDown}
+                            value={username}
+                            ref={usernameRef}
+                            onFocus={e => e.target.select()}
+                        />
+                        <Button
+                            variant="primary"
+                            className="hiscores-submit"
+                            onClick={handleSubmit}
+                            disabled={lookupDisabled}
+                        >
+                            Lookup
+                        </Button>
+                    </InputGroup>
                     {(!isLoading && hiscores) &&
                         <div className="hiscores-skills">
                             <div>Hiscores for {hiscores.username}</div>
