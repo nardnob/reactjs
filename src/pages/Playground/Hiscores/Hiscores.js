@@ -1,5 +1,6 @@
 import { useState, useRef } from 'react';
-import Loading from '../../common/utilities/Loading.js';
+import HiscoresSkills from './HiscoresSkills';
+import Loading from '../../../common/utilities/Loading.js';
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import Form from 'react-bootstrap/Form';
@@ -71,12 +72,7 @@ export default function Hiscores() {
                         </Button>
                     </InputGroup>
                     {(!isLoading && hiscores) &&
-                        <div className="hiscores-skills">
-                            <div>Hiscores for {hiscores.username}</div>
-                            <div>Attack: {hiscores.skills.attack}</div>
-                            <div>Strength: {hiscores.skills.strength}</div>
-                            <div>Defence: {hiscores.skills.defence}</div>
-                        </div>
+                        <HiscoresSkills hiscores={hiscores} />
                     }
                 </Card.Body>
             </Card>

@@ -1,4 +1,4 @@
-import Hiscores from './Hiscores';
+import Hiscores from './Hiscores/Hiscores';
 import Three from './Three';
 import TimePast from '../../common/utilities/TimePast';
 import { useState } from 'react';
