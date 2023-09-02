@@ -40,7 +40,7 @@ export default function Hiscores() {
             setTimeout(() => {
                 usernameRef.current.focus();
             }, 0);
-        }, 3000);
+        }, 2000);
     }
 
     return (
