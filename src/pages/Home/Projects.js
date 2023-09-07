@@ -46,7 +46,7 @@ export default function Projects() {
                     <Col xs={12} sm={6} md={4} lg={3}>
                         <Project
                             title="ASP.NET Core Practice"
-                            text="Practice website made in ASP.NET Core."
+                            text="Practice website made in ASP.NET Core utilizing Blazor."
                             imageSrc="images/aspnetcore.png"
                             link="https://github.com/nardnob/aspnetcore"
                         />
