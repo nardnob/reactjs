@@ -43,6 +43,14 @@ export default function Projects() {
                             link="https://github.com/nardnob/reactjs"
                         />
                     </Col>
+                    <Col xs={12} sm={6} md={4} lg={3}>
+                        <Project
+                            title="ASP.NET Core Practice"
+                            text="Practice website made in ASP.NET Core."
+                            imageSrc="images/aspnetcore.png"
+                            link="https://github.com/nardnob/aspnetcore"
+                        />
+                    </Col>
                 </Row>
             </Card.Body>
         </Card>
