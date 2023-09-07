@@ -21,6 +21,14 @@ export default function Projects() {
                     </Col>
                     <Col xs={12} sm={6} md={4} lg={3}>
                         <Project
+                            title="Docker Container"
+                            text="A basic apache web server Docker container."
+                            imageSrc="images/docker.png"
+                            link="https://github.com/nardnob/hello-docker"
+                        />
+                    </Col>
+                    <Col xs={12} sm={6} md={4} lg={3}>
+                        <Project
                             title="Line Charges"
                             text="ASP.NET MVC Practice, required for a job interview."
                             imageSrc="images/LineCharges.png"
