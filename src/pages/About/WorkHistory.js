@@ -16,13 +16,12 @@ export default function WorkHistory() {
                         <p>
                             As a contractor I’m leveraged to assist multiple departments as needed. I focus primarily on VueJS web
                             development, C# services (WebAPI, WCF), WinForms applications, console applications (often
-                            generating and emailing reports), and even legacy development: VB .NET, Mainframe (COBOL and JCL),
+                            generating and emailing reports), and even legacy development: VB.NET, Mainframe (COBOL and JCL),
                             and classic ASP. 
                         </p>
                         <p>
-                            I have completed countless projects successfully, including: migrations from Subversion
-                            to Azure DevOps, conversions from legacy languages to newer technologies, new features and
-                            maintenance in existing applications, and numerous new applications from the ground up.
+                            I have completed countless projects successfully, including: migrations from Subversion to Azure DevOps, 
+                            conversions from legacy languages to newer technologies, and new features and maintenance in existing applications.
                         </p>
                     </WorkHistoryItem>
 
