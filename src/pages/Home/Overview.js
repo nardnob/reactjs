@@ -15,7 +15,7 @@ export default function Overview() {
                             <p className="overview-text-1">
                                 I specialize in .NET desktop and web development, but have experience with many
                                 technologies. I currently work as a contractor for a trucking company, ArcBest Technologies,
-                                where I've completed countless projects successfully, including numerous new applications from the ground up.
+                                where I've completed countless projects successfully, including a few new applications from the ground up.
                             </p>
                             <p className="overview-text-2">
                                 I am on the job market for a fully-remote position.
