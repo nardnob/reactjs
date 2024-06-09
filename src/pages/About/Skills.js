@@ -4,6 +4,65 @@ import { useState } from 'react';
 import SkillBadges from './SkillBadges';
 import './Skills.css';
 
+export default function Skills() {
+    const [searchText, setSearchText] = useState('');
+
+    const desktopDevelopmentFiltered = 
+        searchText === '' 
+            ? desktopDevelopment 
+            : desktopDevelopment.filter(skill => skill.name.toLowerCase().indexOf(searchText.toLowerCase()) !== -1);
+
+    const webDevelopmentFiltered = 
+        searchText === '' 
+            ? webDevelopment 
+            : webDevelopment.filter(skill => skill.name.toLowerCase().indexOf(searchText.toLowerCase()) !== -1);
+
+    const developerToolsFiltered = 
+        searchText === '' 
+            ? developerTools 
+            : developerTools.filter(skill => skill.name.toLowerCase().indexOf(searchText.toLowerCase()) !== -1);
+
+    return (
+        <>
+            <Card className="mt-3">
+                <Card.Body className="skills-card-body">
+                    <Form className="mb-3" onSubmit={(e) => {
+                        e.preventDefault();
+                        e.stopPropagation();
+                    }}>
+                        <Form.Group controlId="form.ControlInput1">
+                            <Form.Control 
+                                type="text" 
+                                placeholder="Search skills"
+                                className="search-skills"
+                                onChange={e => setSearchText(e.target.value)} 
+                            />
+                        </Form.Group>
+                    </Form>
+
+                    <h2 className="skills-header">Desktop Development</h2>
+                    <SkillBadges
+                        skills={desktopDevelopmentFiltered}
+                        variant="primary"
+                    />
+
+                    <h2 className="skills-header">Web Development</h2>
+                    <SkillBadges
+                        skills={webDevelopmentFiltered}
+                        variant="success"
+                    />
+
+                    <h2 className="skills-header">Developer Tools</h2>
+                    <SkillBadges
+                        skills={developerToolsFiltered}
+                        variant="danger"
+                    />
+                </Card.Body>
+            </Card>
+        </>
+    );
+}
+
 const desktopDevelopment = [
     { id: 0, name: "C#" },
     { id: 1, name: "VB (Visual Basic)" },
@@ -11,8 +70,8 @@ const desktopDevelopment = [
     { id: 3, name: "Winforms" },
     { id: 4, name: "SQL" },
     { id: 5, name: "SQL Server" },
-    { id: 6, name: "Oracle" },
-    { id: 7, name: "IBM DB2" },
+    { id: 6, name: "Oracle (SQL)" },
+    { id: 7, name: "IBM DB2 (SQL)" },
     { id: 8, name: "Stored Procedures" },
     { id: 9, name: "ORMs" },
     { id: 10, name: "NPoco" },
@@ -63,61 +122,3 @@ const developerTools = [
     { id: 10, name: "Microsoft Teams" },
     { id: 11, name: "Microsoft Office" }
 ];
-
-export default function Skills() {
-    const [searchText, setSearchText] = useState('');
-
-    const desktopDevelopmentFiltered = 
-        searchText === '' 
-            ? desktopDevelopment 
-            : desktopDevelopment.filter(skill => skill.name.toLowerCase().indexOf(searchText.toLowerCase()) !== -1);
-
-    const webDevelopmentFiltered = 
-        searchText === '' 
-            ? webDevelopment 
-            : webDevelopment.filter(skill => skill.name.toLowerCase().indexOf(searchText.toLowerCase()) !== -1);
-
-    const developerToolsFiltered = 
-        searchText === '' 
-            ? developerTools 
-            : developerTools.filter(skill => skill.name.toLowerCase().indexOf(searchText.toLowerCase()) !== -1);
-
-    return (
-        <>
-            <Card className="mt-3">
-                <Card.Body>
-                    <Form className="mb-3" onSubmit={(e) => {
-                        e.preventDefault();
-                        e.stopPropagation();
-                    }}>
-                        <Form.Group controlId="form.ControlInput1">
-                            <Form.Control 
-                                type="text" 
-                                placeholder="Search skills"
-                                onChange={e => setSearchText(e.target.value)} 
-                            />
-                        </Form.Group>
-                    </Form>
-
-                    <h2>Desktop Development</h2>
-                    <SkillBadges
-                        skills={desktopDevelopmentFiltered}
-                        variant="primary"
-                    />
-
-                    <h2>Web Development</h2>
-                    <SkillBadges
-                        skills={webDevelopmentFiltered}
-                        variant="success"
-                    />
-
-                    <h2>Developer Tools</h2>
-                    <SkillBadges
-                        skills={developerToolsFiltered}
-                        variant="danger"
-                    />
-                </Card.Body>
-            </Card>
-        </>
-    );
-}

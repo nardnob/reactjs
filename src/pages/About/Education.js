@@ -5,7 +5,7 @@ export default function Education() {
     return (
         <>
             <div className="education">
-                <h2>Education</h2>
+                <h2 className="education-header">Education</h2>
                 <Card style={{ width: '18rem' }} className="mt-3">
                     <Card.Img variant="top" src="images/ualr.jpg" />
                     <Card.Body>

@@ -1,22 +1,15 @@
 .hiscores {
-    width: 300px;
+    width: 285px;
     padding: 5px;
-    float:right;
+    float: right;
 }
 
 .hiscores-title {
     font-size: 20px;
-    font-family: Calibri;
     margin-bottom: 5px;
 }
 
 .hiscores-input {
     padding: 4px;
     width: 210px;
-}
-
-.hiscores-skills {
-    margin-top: 5px;
-    padding: 5px;
-    border: 1px solid gray;
 }

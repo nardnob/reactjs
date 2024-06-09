@@ -1,4 +1,18 @@
 .skill-badge {
     --bs-badge-font-size: 17px;
     margin: 5px;
+    font-weight: normal;
+}
+
+.skills-header {    
+    font-size: 34px;
+    font-family: 'Rajdhani', sans-serif;
+}
+
+.search-skills {
+    max-width: 350px;
+}
+
+.skills-card-body {
+    min-height: 580px;
 }

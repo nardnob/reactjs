@@ -1,0 +1,10 @@
+.hiscores-skills {
+    margin-top: 5px;
+    padding: 5px;
+    border: 1px solid gray;
+    background-color: #404040;
+}
+
+.hiscores-skills .skill-row {
+    margin-bottom: 5px;
+}
