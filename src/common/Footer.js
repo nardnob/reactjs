@@ -13,19 +13,7 @@ export default function Footer() {
 
             <hr className="clearfix w-100 d-md-none pb-0" />
 
-            {/*
-            <div className="col-md-3 mb-md-0 mb-3">
-              <h5 className="text-uppercase">Links</h5>
-              <ul className="list-unstyled">
-                <li><a href="#!">Link 1</a></li>
-                <li><a href="#!">Link 2</a></li>
-                <li><a href="#!">Link 3</a></li>
-                <li><a href="#!">Link 4</a></li>
-              </ul>
-            </div>
-            */}
-
-            <div className="col-md-3 mb-md-0 mb-3">
+            <div className="col-md-6 mb-md-0 mb-3">
               <h5>Important Links</h5>
               <ul className="list-unstyled">
                 <li><a href="/privacy">Privacy Policy</a></li>
