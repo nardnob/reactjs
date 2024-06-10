@@ -102,6 +102,7 @@ export default function ContactModal({ show, isSubmitted, setIsSubmitted, isVali
                         }
                     </Modal.Body>
                     <Modal.Footer>
+                        <a className="contact-form-privacy-link" href="/privacy">Privacy Policy</a>
                         <Button variant="secondary" onClick={handleClose} disabled={isLoading || isSubmitted}>
                             Close
                         </Button>

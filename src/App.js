@@ -3,6 +3,7 @@ import Home from './pages/Home/Home';
 import About from './pages/About/About';
 import Playground from './pages/Playground/Playground';
 import Privacy from './pages/Privacy/Privacy';
+import Contact from './pages/Contact/Contact';
 import NavigationBar from './common/NavigationBar';
 import Footer from './common/Footer';
 import './App.css';
@@ -17,6 +18,7 @@ export default function App() {
                 <Route path="/about" element={<About />} />
                 <Route path="/playground" element={<Playground />} />
                 <Route path="/privacy" element={<Privacy />} />
+                <Route path="/contact" element={<Contact />} />
             </Routes>
             <Footer />
         </>
