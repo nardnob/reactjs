@@ -31,7 +31,6 @@ export default function NavigationBar() {
                             <Nav.Link href="home">Home</Nav.Link>
                             <Nav.Link href="about">About</Nav.Link>
                             <Nav.Link href="playground">Playground</Nav.Link>
-                            <Nav.Link href="privacy">Privacy Policy</Nav.Link>
                             <Nav.Link onClick={handleContactClick}>Contact</Nav.Link>
                         </Nav>
                     </Navbar.Collapse>
