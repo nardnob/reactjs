@@ -4,6 +4,7 @@ import About from './pages/About/About';
 import Playground from './pages/Playground/Playground';
 import Privacy from './pages/Privacy/Privacy';
 import NavigationBar from './common/NavigationBar';
+import Footer from './common/Footer';
 import './App.css';
 
 export default function App() {
@@ -17,6 +18,7 @@ export default function App() {
                 <Route path="/playground" element={<Playground />} />
                 <Route path="/privacy" element={<Privacy />} />
             </Routes>
+            <Footer />
         </>
     )
 }

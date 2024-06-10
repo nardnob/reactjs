@@ -5,4 +5,13 @@
 body {
     background-color: #0d496b;    
     font-family: 'IBM Plex Sans Arabic', sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.app {
+    flex:1;
+    min-height: 36em;
 }
