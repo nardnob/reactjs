@@ -180,7 +180,7 @@ export default function Privacy() {
           <h2>Contact Us</h2>
           <p>If you have any questions about this Privacy Policy, You can contact us:</p>
           <ul>
-            <li>By visiting this page on our website: <a href="https://nardnob.com/contact" rel="external nofollow noopener" target="_blank">https://nardnob.com/contact</a></li>
+            <li>By visiting the <a href="/contact" rel="external nofollow noopener" target="_blank">Contact</a> page.</li>
           </ul>
 
         </Card.Body>
