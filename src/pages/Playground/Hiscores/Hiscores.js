@@ -47,6 +47,7 @@ export default function Hiscores() {
         <div className="hiscores">
             <Card>
                 <Card.Body>
+                    <div className="hiscores-disclaimer"><i className="bi bi-info-circle"></i></div>
                     <div className="hiscores-title">Hiscores</div>
                     {isLoading && (
                         <Loading />

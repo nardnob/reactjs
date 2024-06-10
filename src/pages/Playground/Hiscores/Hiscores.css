@@ -13,3 +13,8 @@
     padding: 4px;
     width: 210px;
 }
+
+.hiscores-disclaimer {
+    float: right;
+    margin-top: 0.1em;
+}
