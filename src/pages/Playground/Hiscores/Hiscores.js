@@ -5,6 +5,8 @@ import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import Form from 'react-bootstrap/Form';
 import InputGroup from 'react-bootstrap/InputGroup';
+import Tooltip from 'react-bootstrap/Tooltip';
+import OverlayTrigger from 'react-bootstrap/OverlayTrigger'
 import './Hiscores.css';
 
 export default function Hiscores() {
@@ -47,6 +49,20 @@ export default function Hiscores() {
         <div className="hiscores">
             <Card>
                 <Card.Body>
+                    <div className="hiscores-disclaimer">
+                        <OverlayTrigger
+                            delay={{ hide: 100, show: 100 }}
+                            overlay={(props) => (
+                                <Tooltip {...props}>
+                                   This does not fetch actual data. CORS issues prevent that, but check out my Github 
+                                   to see it working from a Chrome extension.
+                                </Tooltip>
+                            )}
+                            placement="top"
+                        >
+                            <i className="bi bi-info-circle"></i>
+                        </OverlayTrigger>
+                    </div>
                     <div className="hiscores-title">Hiscores</div>
                     {isLoading && (
                         <Loading />
