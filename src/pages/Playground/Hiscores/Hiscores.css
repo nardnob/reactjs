@@ -18,3 +18,8 @@
     float: right;
     margin-top: 0.1em;
 }
+
+.hiscores-submit {    
+    border-top-right-radius: 6px !important;
+    border-bottom-right-radius: 6px !important;
+}
