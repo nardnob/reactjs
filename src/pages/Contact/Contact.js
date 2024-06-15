@@ -7,7 +7,7 @@ export default function Contact() {
             <div className="app">
                 <Card className="contact-card">
                     <Card.Body>
-                    <h1 className="contact-header">How to Contact Me</h1>
+                        <h1 className="contact-header">How to Contact Me</h1>
                         <div>
                             To contact me, click "Contact" in the header.
                         </div>

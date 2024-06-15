@@ -10,7 +10,7 @@ export default function Playground() {
 
     return (
         <>
-            <div className="app">
+            <div className="app clearfix">
                 <h1 className="playground-header">Playground</h1>
                 <div className="mb-3">You first landed on this page <TimePast beginDate={initialTime} />.</div>
                 <Three />
