@@ -6,10 +6,11 @@ import './Three.css';
 
 function Box(props) {
     // This reference gives us direct access to the THREE.Mesh object
-    const ref = useRef()
+    const ref = useRef();
+
     // Hold state for hovered and clicked events
-    const [hovered, setHover] = useState(false)
-    const [clicked, setClick] = useState(false)
+    const [hovered, setHover] = useState(false);
+    const [clicked, setClick] = useState(false);
     // Subscribe this component to the render-loop, rotate the mesh every frame
     //useFrame((state, delta) => (ref.current.rotation.x += delta))
 
@@ -48,6 +49,9 @@ export default function Three() {
                         <OrbitControls
                             autoRotate={true}
                             autoRotateSpeed={5}
+                            minDistance={1}
+                            maxDistance={20}
+                            enablePan={false}
                         />
                     </Canvas>
                 </div>
