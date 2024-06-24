@@ -14,9 +14,17 @@ export default function Projects() {
                     <Col xs={12} sm={6} md={4} lg={3}>
                         <Project
                             title="Algorithm Comparison"
-                            text="Comparing sorting algorithms in .NET 8, C# 12, and WinForms."
+                            text="Comparing various sorting algorithms in .NET 8, C# 12, and WinForms."
                             imageSrc="images/algorithm-comparison.png"
                             link="https://github.com/nardnob/algorithm-comparison"
+                        />
+                    </Col>
+                    <Col xs={12} sm={6} md={4} lg={3}>
+                        <Project
+                            title="Windows Input Tracker"
+                            text="Windows input tracker in .NET 8, C# 12, and WinForms."
+                            imageSrc="images/windows-input-tracker.png"
+                            link="https://github.com/nardnob/windows-input-tracker"
                         />
                     </Col>
                     <Col xs={12} sm={6} md={4} lg={3}>
