@@ -13,6 +13,14 @@ export default function Projects() {
                 <Row>
                     <Col xs={12} sm={6} md={4} lg={3}>
                         <Project
+                            title="Algorithm Comparison"
+                            text="Comparing sorting algorithms in .NET 8, C# 12, and WinForms."
+                            imageSrc="images/algorithm-comparison.png"
+                            link="https://github.com/nardnob/algorithm-comparison"
+                        />
+                    </Col>
+                    <Col xs={12} sm={6} md={4} lg={3}>
+                        <Project
                             title="ASP.NET Core + Blazor"
                             text="Practice website made in ASP.NET Core utilizing Blazor."
                             imageSrc="images/aspnetcore.png"
