@@ -23,6 +23,11 @@
     margin-top: 15px;
 }
 
+.headshot {
+    width: 300px;
+    height: 300px;
+}
+
 .overview-spacer {
     margin: 50px;
     border-top: 3px solid #212529;
